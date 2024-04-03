@@ -1,7 +1,7 @@
 CXX=clang++
 CXXFLAGS=-Iinclude -std=c++20 -pedantic -Wall -Wextra -fPIC
 OBJS=src/bypass.o
-LIB=bypass.so
+LIB=libbypass.so
 
 all: opti
 

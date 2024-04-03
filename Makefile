@@ -1,4 +1,10 @@
-all: opti
+LDFLAGS=-Lprint/
+LDLIBS=-lprint
+CXXFLAGS=-std=c++17
+
+all: opti printer
+
+printer: CXXFLAGS+=-Iprint
 
 opti:
 	make -C bypass $@
@@ -11,5 +17,6 @@ debug:
 clean:
 	make -C bypass $@
 	make -C print $@
+	$(RM) printer
 
 .PHONY: all opti debug clean

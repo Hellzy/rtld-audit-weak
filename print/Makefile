@@ -1,7 +1,7 @@
 CXX=clang++
 CXXFLAGS=--std=c++20 -pedantic -Wall -Wextra -fPIC
 OBJS=print.o
-LIB=print.so
+LIB=libprint.so
 
 all: opti
 
