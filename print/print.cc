@@ -2,7 +2,7 @@
 
 namespace libprint {
 
-    void println(const std::string_view& str) {
+    void println(const char* str) {
         std::cout << str << std::endl;
     }
 

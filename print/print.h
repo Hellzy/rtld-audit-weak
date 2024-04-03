@@ -1,10 +1,8 @@
 #pragma once
 
-#include <string_view>
-
 namespace libprint
 {
 
-void println(const std::string_view& str);
+void println(const char* str);
     
 } // namespace libprint
